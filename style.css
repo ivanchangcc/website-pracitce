@@ -1,0 +1,365 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*end of css reset*/
+
+
+body {
+    font-family: 'PingFangTC', sans-serif;
+    color: #3F5D45;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-flex-end {
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    height: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    display: block;
+    height: 40px;
+}
+
+/*topNav stlying*/
+.topNav {
+    display: flex;
+    align-items: center;
+}
+.topNav ul {
+    display: flex;
+}
+.topNav a {
+    text-decoration: none;
+    color: #3F5D45;
+    padding-right: 60px;
+    display: flex;
+    transition: .25s;
+}
+.topNav .active {
+    font-weight: 600;
+}
+.topNav a:hover {
+    font-weight: 700;
+}
+.shoppingCart {
+    cursor: pointer;
+}
+
+/*bannner img stlying*/
+.banner {
+    width: 940px;
+    padding-bottom: 60px;
+}
+
+/*main content stlying*/
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+/*localNav stlying*/
+.localNav {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+.localNavTitle {
+    height: 65px;
+    width: 300px;
+    text-align: center;
+    background-color: #3F5D45;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 65px;
+}
+.localNav a {
+    height: 65px;
+    text-decoration: none;
+    color: #3F5D45;
+    display: block;
+    text-align: center;
+    align-self: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 65px;
+    border: #EAF0ED 1px solid;
+}
+.localNav .active {
+    background-color: #EAF0ED;
+}
+.localNav a:hover {
+    background-color: #EAF0ED;
+}
+
+/*itemGrid stlying*/
+.itemGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tag {
+    width: 16px;
+    height: 80px;
+    margin-left: 20px;
+    background-color: #3F5D45;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.like {
+    cursor: pointer;
+    margin-top: 16px;
+    margin-right: 20px;
+}
+.item {
+    width: 300px;
+    height: 436px; 
+    padding-bottom: 20px;  
+}
+.itemImg1 {
+    display: flex;
+    justify-content: space-between;
+    height: 315px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-1.png?raw=true) no-repeat;
+}
+.itemImg2 {
+    display: flex;
+    justify-content: space-between;
+    height: 315px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-2.png?raw=true) no-repeat;
+}
+.itemImg3 {
+    display: flex;
+    justify-content: space-between;
+    height: 315px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-3.png?raw=true) no-repeat;
+}
+.itemImg4 {
+    display: flex;
+    justify-content: space-between;
+    height: 315px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-4.png?raw=true) no-repeat;
+}
+.itemImg5 {
+    display: flex;
+    justify-content: space-between;
+    height: 315px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-5.png?raw=true) no-repeat;
+}
+.itemImg6 {
+    display: flex;
+    justify-content: space-between;
+    height: 315px;
+    background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/p-6.png?raw=true) no-repeat;
+}
+.itemDescription {
+    display: flex;
+    border: #EAF0ED 1px solid;
+    height: 56px;
+    align-items: center;
+    justify-content: space-between;
+}
+.itemName {
+    font-weight: 300;
+    font-size: 20px;
+    height: 56px;
+    padding: 14px 33px;
+    line-height: 56px;
+}
+.itemPrice {
+    font-size: 20px;
+    border: #EAF0ED 1px solid;
+    height: 56px;
+    width: 127px;
+    text-align: center;
+    line-height: 56px;
+}
+.addToCart {
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    background-color: #EAF0ED;
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+}
+.addToCart:hover {
+    background-color: #3F5D45;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/*pagination*/
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.pagination .active {
+    background-color: #3F5D45;
+    color: white;
+}
+.pagination a {
+    text-decoration: none;
+    color: #3F5D45;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: #EAF0ED 1px solid;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 60px;
+}
+.pagination .pageLink:hover {
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    transition: .3s;
+}
+.pageControl {
+    margin-top: 17px;
+}
+
+/*email subscription stlying*/
+.email {
+    display: flex;
+    background-color: #3F5D45;
+    height: 116px;
+}
+
+.email div {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo-s {
+    width: 40px;
+    height: 40px;
+    padding-right: 20px;
+}
+
+.emailIcon {
+    padding: 16px 20px;
+}
+.input {
+    background-color: #EAF0ED;
+    height: 56px;
+    width: 380px;
+}
+.textArea {
+    background-color: #EAF0ED;
+    border: none;
+    height: 40px;
+    width: 240px;
+    margin-right: 12px;
+}
+.submit {
+    background-color: #FFE180;
+    width: 64px;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*footer stlying*/
+footer {
+    background-color:#EAF0ED;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.contactInfo {
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    padding-top: 115px;
+}
+.contactInfo a {
+    color: #3F5D45;
+}
+.contactInfo p {
+    line-height: 1.5;
+}
+.linksAndCopyRight {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.linksAndCopyRight span {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 19px;
+}
